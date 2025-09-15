@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>ConectaTech 2025 - Evento de Networking</title>
+<style>
+    :root{
+      --azul:#0066CC;
+      --verde:#009966;
+      --gris:#f4f6f8;
+      --texto:#21343a;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+    }
+    body{margin:0;background:linear-gradient(180deg,#ffffff 0%,var(--gris) 100%);color:var(--texto);}
+    .container{max-width:1000px;margin:28px auto;padding:24px;background:#fff;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.08);}
+    header{display:flex;align-items:center;gap:18px}
+    .logo{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,var(--azul),var(--verde));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:20px}
+    h1{margin:0;font-size:28px}
+    p.lead{color:#425a60;margin-top:8px}
+    .cta{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+    .btn{padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:700;display:inline-block}
+    .btn-primary{background:var(--azul);color:#fff}
+    .btn-outline{background:transparent;border:2px solid var(--azul);color:var(--azul)}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:22px}
+    .card{background:#fbfdff;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.03)}
+    h2{margin:0 0 10px 0;font-size:20px;color:var(--azul)}
+    ul{padding-left:18px}
+    .price{font-size:22px;font-weight:800;color:var(--verde);margin:6px 0}
+    .features{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+    footer{margin-top:26px;padding-top:12px;border-top:1px solid #e6eef0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+    .small{font-size:13px;color:#6c7b80}
+    .agenda{margin-top:12px}
+    .highlight{background:linear-gradient(90deg,rgba(0,102,204,0.1),rgba(0,153,102,0.08));padding:12px;border-radius:8px}
+    input[type="email"]{width:100%;padding:10px;border-radius:8px;border:1px solid #d6e2e8;margin-top:8px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.logo{width:64px;height:64px}}
+  </style>
+</head>
+<body>
+<div class="container">
+<header>
+<div class="logo"><img alt="ConectaTech Networking 2025" src="logo_conectatech.png" style="width:90px;height:auto;border-radius:12px"/></div>
+<div>
+<h1>ConectaTech 2025</h1>
+<p class="lead">Innovación y Alianzas Digitales — Evento de networking para pymes, startups y líderes tecnológicos.</p>
+<div class="cta">
+<a class="btn btn-primary" href="#registro">Inscríbete ahora</a>
+<a class="btn btn-outline" href="#programa">Ver agenda</a>
+</div>
+</div>
+</header>
+<div class="grid">
+<main>
+<section class="card">
+<h2>¿Qué es ConectaTech 2025?</h2>
+<p>ConectaTech 2025 es un encuentro presencial (con transmisión virtual) diseñado para unir a emprendedores, pymes, startups y empresas tecnológicas en un espacio donde puedan crear alianzas estratégicas, descubrir clientes potenciales y aprender de expertos en transformación digital.</p>
+<div class="agenda">
+<h3 style="margin-bottom:6px">Agenda resumida</h3>
+<ul>
+<li><strong>08:30</strong> Registro y bienvenida</li>
+<li><strong>09:00</strong> Conferencia inaugural</li>
+<li><strong>10:30</strong> Panel de expertos</li>
+<li><strong>12:00</strong> Sesión de networking</li>
+<li><strong>14:00</strong> Talleres y pitch de startups</li>
+<li><strong>16:00</strong> Clausura y conclusiones</li>
+</ul>
+</div>
+</section>
+<section class="card" style="margin-top:16px">
+<h2>Beneficios para asistentes</h2>
+<ul>
+<li>Acceso directo a contactos estratégicos del sector.</li>
+<li>Oportunidad de presentar proyectos frente a inversores y aliados.</li>
+<li>Aprendizaje con expertos y talleres prácticos.</li>
+<li>Visibilidad de marca en la zona de exhibición.</li>
+</ul>
+</section>
+<section class="card" style="margin-top:16px">
+<h2>¿Por qué asistir?</h2>
+<div class="highlight">
+<p class="small">ConectaTech 2025 te conecta con las personas correctas: clientes potenciales, socios tecnológicos e inversionistas. Si buscas escalar tu negocio, encontrar partners o aprender prácticas de transformación digital, este evento es para ti.</p>
+</div>
+</section>
+</main>
+<aside>
+<div class="card">
+<h2>Registro</h2>
+<p class="small">Llena tu correo y te enviaremos la información para completar tu inscripción.</p>
+<form action="mailto:info@conectatech.co?subject=Inscripcion%20ConectaTech%202025" enctype="text/plain" id="registro" method="post">
+<input name="email" placeholder="Tu correo electrónico" required="" type="email"/>
+<div style="margin-top:12px;display:flex;gap:8px">
+<button class="btn btn-primary" style="flex:1" type="submit">Solicitar inscripción</button>
+</div>
+</form>
+<div style="margin-top:14px">
+<h3 style="margin:0 0 6px 0">Precios</h3>
+<div class="price">General: $150.000 COP</div>
+<div class="price" style="color:var(--azul)">VIP: $300.000 COP</div>
+<div class="small">Patrocinadores: desde $2.000.000 COP</div>
+</div>
+</div>
+<div class="card" style="margin-top:16px">
+<h2>Patrocinios</h2>
+<p class="small">Visibilidad destacada, stand corporativo y acceso VIP. Contáctanos para paquetes personalizados.</p>
+<a class="btn btn-outline" href="mailto:patrocinio@conectatech.co">Contactar patrocinio</a>
+</div>
+<div class="card" style="margin-top:16px">
+<h2>Contacto</h2>
+<p class="small">Correo: <a href="mailto:info@conectatech.co">info@conectatech.co</a></p>
+<p class="small">Tel: +57 300 000 0000</p>
+<p class="small">Síguenos: @ConectaTech (LinkedIn / Instagram / Facebook)</p>
+</div>
+</aside>
+</div>
+<footer>
+<div class="small">© 2025 ConectaTech. Diseñado para NetSolutions S.A.S.</div>
+<div class="small">Centro de Convenciones de Bogotá · 25 de noviembre de 2025</div>
+</footer>
+</div>
+</body>
+</html>
